@@ -20,7 +20,7 @@ const ItemCount = ({ stockItems }) => {
     }
 
     return (
-        <div className="d-flex justify-content-between" id="itemcount">
+        <div className="d-flex justify-content-between mb-2" id="itemcount">
         
                 <div className="col-md-2">
                     <div className="btn-group" role="group" aria-label="Basic outlined example">

@@ -30,7 +30,7 @@ useEffect(() => {
 
 return (
     <div className="container">
-    <div className="row">
+    <div className="row h-100">
         <ItemList item={item} />
     </div>
     </div>

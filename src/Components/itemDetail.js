@@ -3,9 +3,9 @@ import ItemCount from './itemCount';
 const ItemDetail = ({ item }) => {
     return (
         <div className='row mt-2'>
-            <div className='col-md-4 offset-md-4'>
+            <div className='col-md-3 offset-md-4 border border-1 border-black card'>
                 <img src={item.imagen} className='img-fluid' alt={item.nombre} />
-                <h2>{item.nombre}</h2>
+                <h3>{item.nombre}</h3>
                 <p>{item.descripcion}</p>
                 <strong> $ {item.precio}</strong>
                 <p> Stock: {item.stock}</p>

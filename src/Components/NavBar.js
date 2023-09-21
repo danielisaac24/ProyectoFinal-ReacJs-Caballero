@@ -21,18 +21,6 @@ const NavBar = () => {
                                         </li>
                                         
                                     </ul>
-                        {/* <ul className="navbar-nav">
-                            <li className="nav-item">
-                                <Link className="nav-link" aria-current="page" to="">Bicicletas</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link text-dec" to="">Tranmisiones</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link" to="">Cubiertas</Link>
-                            </li>
-                
-                        </ul> */}
                     </div>
                     <CartWidget/>
                 </div>
