@@ -1,9 +1,9 @@
 import React from "react";
-import Item from "./item";
+import Item from "./Item";
 
 const ItemList = ({ item }) => {
 return (
-    <div className="row" id="itemlist">
+    <div className="row h-100vh" id="itemlist">
     {item.map((item) => (
         <div className="col-md-3" key={item.id}>
         <Item item={item} />
