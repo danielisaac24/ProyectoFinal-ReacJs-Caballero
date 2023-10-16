@@ -36,7 +36,7 @@ img{
   object-fit: contain;
 }
 .footer{
-  position: sticky;
+  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -57,7 +57,9 @@ img{
 .carrito p {
   font-size: 18px;
 }
-
+.btn{
+  margin-top: .625rem;
+}
 .btn-total {
   background-color: #007bff;
   color: #fff;

@@ -9,6 +9,10 @@ import {
     doc,
     getDoc,
 } from 'firebase/firestore';
+// ES6 Modules or TypeScript
+
+// CommonJS
+
 
 export const Checkout = () => {
     const [ nombre, setNombre ] = useState('');
@@ -90,7 +94,7 @@ export const Checkout = () => {
     return (
         <>
             <h2 className="info">
-                Rellena el formulario y nos contactaremos para enviar sus productos
+                Finalizar la compra
             </h2>
 
             <form onSubmit={manejadorFormulario}>
@@ -105,32 +109,23 @@ export const Checkout = () => {
                     </div>
                 ))}
 
-                <div className="form-group">
-                    <label className="lab-check">Nombre</label>
-                    <input className="input-check" type="text" value={nombre} onChange={(e) => setNombre(e.target.value)} />
-                </div>
+                <div className="form-group row g-3 ">
+                    <input className="form-control form-control-lg input-check" type="text" value={nombre} placeholder="Nombre" onChange={(e) => setNombre(e.target.value)} />
+                    <input className="form-control form-control-lg input-check" type="text" value={apellido} placeholder="Apellido" onChange={(e) => setApellido(e.target.value)} />
+                    {/* <input className="form-control input-check" type="number" value={telefono} placeholder="Cod. Area" onChange={(e) => setTelefono(e.target.value)} /> */}
+                    <input className="form-control form-control-lg input-check" type="number" value={telefono} placeholder="Telefono" onChange={(e) => setTelefono(e.target.value)} />
+                    </div>
 
-                <div className="form-group">
-                    <label className="lab-check  aria-label=" readonly>Apellido</label>
-                    <input className="input-check" type="text" value={apellido} onChange={(e) => setApellido(e.target.value)}/>
-                </div>
+                    <div className="input-group mt-3 mb-3">
+                        <input className="form-control form-control-lg input-check" type="email" value={email} placeholder="Email" onChange={(e) => setEmail(e.target.value)} />
+                        <span className="input-group-text" id="basic-addon2">@example.com</span>
+                    </div>
 
-                <div className="form-group">
-                    <label className="lab-check ">Telefono</label>
-                    <input className="input-check" type="number" value={telefono} onChange={(e) => setTelefono(e.target.value)}/>
-                </div>
-
-                <div className="form-group">
-                    <label className="lab-check ">Email</label>
-                    <input className="input-check" type="email" value={email} onChange={(e) => setEmail(e.target.value)}/>
-                </div>
-
-                <div className="form-group">
-                    <label className="lab-check ">Email Confirmacion</label>
-                    <input className="input-check" type="email" value={emailConfirmacion} onChange={(e) => setEmailConfirmacion(e.target.value)}/>
-                </div>
-
-                {error && <p className="error-campos">{error}</p>}
+                    <div className="input-group mb-3">
+                        <input className="form-control form-control-lg input-check" type="email" value={emailConfirmacion} placeholder="Confirmacion de email" onChange={(e) => setEmailConfirmacion(e.target.value)} />
+                        <span className="input-group-text" id="basic-addon2">@example.com</span>
+                    </div>
+                {error && <p className="error-campos">{error}</p>} 
 
                 {ordenId && (
                     <p className="orden">
@@ -138,12 +133,9 @@ export const Checkout = () => {
                         {ordenId}{' '}
                     </p>
                 )}
-
-                <div className="checking">
-                    <button className="check-bt" type="submit">
+                    <button className="btn btn-outline-primary" type="submit">
                         Finalizar Compra
                     </button>
-                </div>
             </form>
         </>
     );
