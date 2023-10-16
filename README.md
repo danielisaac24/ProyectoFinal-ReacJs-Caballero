@@ -12,4 +12,4 @@ BikeShop surge en la cursada de ReacJS. Es una tinda dedicada a la venta de resp
 	- ref: https://sweetalert2.github.io
 - Cloud Firebase.
 
-<img src="(src/assets/React App - Google Chrome 2023-10-16 17-48-06.gif)"><img/>
+<img src="https://github.com/danielisaac24/ProyectoFinal-ReacJs-Caballero/blob/main/src/assets/React%20App%20-%20Google%20Chrome%202023-10-16%2017-48-06.gif"><img/>
